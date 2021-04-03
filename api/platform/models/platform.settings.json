@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "plataforms",
+  "collectionName": "platforms",
   "info": {
-    "name": "plataform"
+    "name": "platform",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,8 +22,8 @@
       "targetField": "name"
     },
     "games": {
-      "via": "plataforms",
-      "collection": "game"
+      "collection": "game",
+      "via": "platforms"
     }
   }
 }
