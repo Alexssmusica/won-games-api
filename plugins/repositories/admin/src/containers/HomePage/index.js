@@ -4,7 +4,6 @@ import { Header } from '@buffetjs/custom';
 import { Table } from '@buffetjs/core';
 import styled from 'styled-components';
 import axios from "axios";
-import createStrapi from 'strapi';
 
 const Wrapper = styled.div`
   padding: 18px 30px;
