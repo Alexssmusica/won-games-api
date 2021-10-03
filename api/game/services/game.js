@@ -101,7 +101,7 @@ async function setImage({ image, game, field = "cover" }) {
 
     await axios({
       method: "POST",
-      url: `https://won-games-ws.herokuapp.com/upload`,
+      url: `http://${strapi.config.host}:${strapi.config.port}/upload`,
       data: formData,
       headers: {
         "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
@@ -147,7 +147,7 @@ async function createGames(products) {
             .map((url) => setImage({ image: url, game, field: "gallery" }))
         );
 
-        await timeout(10000);
+        await timeout(5000);
 
         return game;
       }
