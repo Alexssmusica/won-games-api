@@ -101,7 +101,7 @@ async function setImage({ image, game, field = "cover" }) {
 
         await axios({
             method: "POST",
-            url: `https://${strapi.config.host}/upload`,
+            url: `http://${strapi.config.host}:${strapi.config.port}/upload`,
             data: formData,
             headers: {
                 "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
@@ -114,7 +114,7 @@ async function setImage({ image, game, field = "cover" }) {
 
 async function createGames(products) {
     await Promise.all(
-        products.map(async (product) => {
+        products.map(async(product) => {
             const item = await getByName(product.title, "game");
 
             if (!item) {
@@ -143,8 +143,8 @@ async function createGames(products) {
                 await setImage({ image: product.image, game });
                 await Promise.all(
                     product.gallery
-                        .slice(0, 5)
-                        .map((url) => setImage({ image: url, game, field: "gallery" }))
+                    .slice(0, 5)
+                    .map((url) => setImage({ image: url, game, field: "gallery" }))
                 );
 
                 await timeout(5000);
@@ -156,7 +156,7 @@ async function createGames(products) {
 }
 
 module.exports = {
-    populate: async (params) => {
+    populate: async(params) => {
         try {
             const gogApiUrl = `https://www.gog.com/games/ajax/filtered?mediaType=game&${qs.stringify(
                 params
