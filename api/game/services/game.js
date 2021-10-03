@@ -101,7 +101,7 @@ async function setImage({ image, game, field = "cover" }) {
 
         await axios({
             method: "POST",
-            url: `http://${strapi.config.host}:${strapi.config.port}/upload`,
+            url: `https://${strapi.config.host}/upload`,
             data: formData,
             headers: {
                 "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
