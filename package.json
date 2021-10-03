@@ -1,42 +1,47 @@
 {
-  "name": "won-games-api",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "jsdom": "^16.5.2",
-    "knex": "0.21.18",
-    "pg": "8.5.1",
-    "slugify": "^1.5.0",
-    "strapi": "3.5.4",
-    "strapi-admin": "3.5.4",
-    "strapi-connector-bookshelf": "3.5.4",
-    "strapi-plugin-ckeditor5": "^1.8.0",
-    "strapi-plugin-content-manager": "3.5.4",
-    "strapi-plugin-content-type-builder": "3.5.4",
-    "strapi-plugin-email": "3.5.4",
-    "strapi-plugin-entity-relationship-chart": "^3.1.0",
-    "strapi-plugin-graphql": "3.5.4",
-    "strapi-plugin-upload": "3.5.4",
-    "strapi-plugin-users-permissions": "3.5.4",
-    "strapi-utils": "3.5.4"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "cf7de253-e762-423f-b827-db49ce41b6b8"
-  },
-  "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": "^6.0.0"
-  },
-  "license": "MIT"
+    "name": "won-games-api",
+    "private": true,
+    "version": "0.1.0",
+    "description": "A Strapi application",
+    "scripts": {
+        "develop": "strapi develop",
+        "start": "strapi start",
+        "build": "strapi build",
+        "strapi": "strapi"
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "jsdom": "^16.5.3",
+        "knex": "0.95.11",
+        "pg": "8.7.1",
+        "slugify": "^1.6.0",
+        "strapi": "3.6.8",
+        "strapi-admin": "3.6.8",
+        "strapi-connector-bookshelf": "3.6.8",
+        "strapi-plugin-ckeditor5": "^1.13.0",
+        "strapi-plugin-content-manager": "3.6.8",
+        "strapi-plugin-content-type-builder": "3.6.8",
+        "strapi-plugin-email": "3.6.8",
+        "strapi-plugin-email-designer": "^1.1.7",
+        "strapi-plugin-entity-relationship-chart": "3.1.0",
+        "strapi-plugin-graphql": "3.6.8",
+        "strapi-plugin-sync-roles-permissions": "^0.4.3",
+        "strapi-plugin-upload": "3.6.8",
+        "strapi-plugin-users-permissions": "3.6.8",
+        "strapi-provider-email-nodemailer": "^3.6.8",
+        "strapi-provider-upload-cloudinary": "^3.6.8",
+        "strapi-utils": "3.6.8",
+        "stripe": "^8.178.0"
+    },
+    "author": {
+        "name": "A Strapi developer"
+    },
+    "strapi": {
+        "uuid": "cf7de253-e762-423f-b827-db49ce41b6b8"
+    },
+    "engines": {
+        "node": ">=10.16.0 <=14.x.x",
+        "npm": "^6.0.0"
+    },
+    "license": "MIT"
 }

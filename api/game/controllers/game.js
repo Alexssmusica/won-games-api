@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-    populate: async (ctx) => {
+    populate: async(ctx) => {
         console.log("Starting to populate...");
 
         const options = {
