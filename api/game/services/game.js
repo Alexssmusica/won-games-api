@@ -147,7 +147,7 @@ async function createGames(products) {
                     .map((url) => setImage({ image: url, game, field: "gallery" }))
                 );
 
-                await timeout(5000);
+                await timeout(20000);
 
                 return game;
             }
