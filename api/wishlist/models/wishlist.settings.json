@@ -10,7 +10,8 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "users": {
+    "user": {
+      "unique": true,
       "plugin": "users-permissions",
       "model": "user"
     },
