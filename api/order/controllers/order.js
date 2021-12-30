@@ -2,7 +2,7 @@
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const { sanitizeEntity } = require("strapi-utils");
-const orderTemplate = require("../../../config/email-templates/order");
+// const orderTemplate = require("../../../config/email-templates/order");
 
 module.exports = {
   createPaymentIntent: async (ctx) => {
@@ -95,12 +95,14 @@ module.exports = {
 
     // enviar um email da compra para o usuário
 
-    await strapi.plugins.email.services.email.sendTemplatedEmail(
+    await strapi.plugins["email-designer"].services.email.sendTemplatedEmail(
       {
         to: userInfo.email,
         from: "no-reply@wongames.com",
       },
-      orderTemplate,
+      {
+        templateId: 2,
+      },
       {
         user: userInfo,
         payment: {

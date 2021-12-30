@@ -5663,9 +5663,9 @@ git-url-parse@^11.4.4:
     git-up "^4.0.0"
 
 github-buttons@^2.8.0:
-  version "2.19.1"
-  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.19.1.tgz#9703755a4da1c5b229d3f1d875c2f787efa59bd5"
-  integrity sha512-us6ZC0bFYLfBq2CkZJJRpdPP5JlB6+kWFTdw8iK3E7yoMKdoLhDkqQHelJ+39UVR2zQbfXN5gNt3cVYp4fAuXA==
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.21.1.tgz#9e55eb83b70c9149a21c235db2e971c53d4d98a2"
+  integrity sha512-n9bCQ8sj+5oX1YH5NeyWGbAclRDtHEhMBzqw2ctsWpdEHOwVgfruRu0VIVy01Ah10dd/iFajMHYU71L7IBWBOw==
 
 github-from-package@0.0.0:
   version "0.0.0"
@@ -6126,9 +6126,9 @@ html-minifier@^3.2.3, html-minifier@^3.5.8:
     uglify-js "3.4.x"
 
 html-to-text@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/html-to-text/-/html-to-text-8.0.0.tgz#5848681a5a38d657a7bb58cf5006d1c29fe64ce3"
-  integrity sha512-fEtul1OerF2aMEV+Wpy+Ue20tug134jOY1GIudtdqZi7D0uTudB2tVJBKfVhTL03dtqeJoF8gk8EPX9SyMEvLg==
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/html-to-text/-/html-to-text-8.1.0.tgz#0c35fc452e6eccb275669adb8bcc61d93ec43ed5"
+  integrity sha512-Z9iYAqYK2c18GswSbnxJSeMs7lyJgwR2oIkDOyOHGBbYsPsG4HvT379jj3Lcbfko8A5ceyyMHAfkmp/BiXA9/Q==
   dependencies:
     "@selderee/plugin-htmlparser2" "^0.6.0"
     deepmerge "^4.2.2"
@@ -9451,9 +9451,9 @@ react-dom@^16.9.0:
     scheduler "^0.19.1"
 
 react-email-editor@^1.3.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/react-email-editor/-/react-email-editor-1.4.0.tgz#5c8bf6eca72533dec64032418688358a83562cff"
-  integrity sha512-nXVBeJPYHtqw21NoPXmgL7VBPezR7Ob/GLwZ6EHd6m5pFqmQ+Za4/vbCtuqFk4lzHOByzHx57e74ucdRqGruqw==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-email-editor/-/react-email-editor-1.5.0.tgz#54b1318460bb9c6697321227ca1551bac78ff8a8"
+  integrity sha512-81+tVkLJZUaezXIKZdMAg631mMORaDkqrj0Ud6hHpYtLfdz1v1gFRiAsehvvh44+7J/LmzWacavZ5HtM1qaINw==
 
 react-error-boundary@3.1.1:
   version "3.1.1"
