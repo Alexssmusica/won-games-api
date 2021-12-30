@@ -2,11 +2,6 @@
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
- * to customize this controller
- */
-
 module.exports = {
   createPaymentIntent: async (ctx) => {
     const { cart } = ctx.request.body;
@@ -55,5 +50,32 @@ module.exports = {
         error: err.raw.message,
       };
     }
+  },
+
+  create: async (ctx) => {
+    // pegar as informações do frontend
+    const { cart, paymentIntentId, paymentMethod } = ctx.request.body;
+
+    // pega o token
+    const token = await strapi.plugins[
+      "users-permissions"
+    ].services.jwt.getToken(ctx);
+
+    // pega o id do usuario
+    const userId = token.id;
+
+    // pegar as informações do usuário
+    const userInfo = await strapi
+      .query("user", "users-permissions")
+      .findOne({ id: userId });
+
+    // pegar os jogos
+    // pegar o total (saber se é free ou não)
+    // pegar o paymentIntentId
+    // pegar as informações do pagamento (paymentMethod)
+    // salvar no banco
+    // enviar um email da compra para o usuário
+
+    return { cart, paymentIntentId, paymentMethod, userInfo };
   },
 }
